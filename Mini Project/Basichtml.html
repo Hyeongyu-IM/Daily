@@ -5,44 +5,62 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="Basichtml.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous" />
     <title>Basichtml</title>
 </head>
 
 <body>
-    <section>
+    <section class="tiping">
         <div class="top">
-            <span>댓글 9</span>
-            <button></button>
-            <span>내 댓글</span>
-            <button>></button>
+            <div class="rigth">
+                <span class="reple">댓글 9</span>
+                <button class="leftbtn">
+            <i class="far fa-thumbs-up"></i>
+          </button>
+            </div>
+            <div class="left">
+                <span class="repleright">내 댓글</span>
+                <button class="rightbtn">
+            <i class="far fa-thumbs-up"></i>
+          </button>
+            </div>
         </div>
         <div class="main">
-            <input type="text" 댓글을 입력해 주세요 />
-            <button>등록</button>
+            <input class="textbox" type="textarea" 댓글을 입력해 주세요 />
+            <button class="textbtn">등록</button>
         </div>
         <div class="bottom">
-            <button>호감순</button>
-            <button>최신순</button>
-            <button>공감비율순</button>
-            <button></button>
+            <div class="leftbtns">
+                <button class="checkbtn">
+            <i class="far fa-thumbs-up"></i>
+          </button>
+                <button class="rcmbtn">호감순</button>
+                <button class="rcmbtn">최신순</button>
+                <button class="rcmbtn">공감비율순</button>
+            </div>
+            <div class="rigthbtns">
+                <button class="rcmrightbtn">
+            <i class="far fa-thumbs-up"></i>
+          </button>
+            </div>
         </div>
     </section>
     <div class="main">
-        <section2>
-            <div class="username">ouo0****<button></button></div>
+        <section class="chat">
+            <div class="username">ouo0****</div>
             <div class="content">
                 시각장애인들을 위한 지원이 정말 많네요. 앞으로도 이런 지원들이 많아졌으면 좋겠어요!!
             </div>
             <div class="dateandbutton">
-                <span>현재시간</span>
-                <button>접기요청</button>
+                <span class="dateandtime">현재시간</span>
+                <button class="shortbtn">접기요청</button>
             </div>
             <div class="upanddown">
-                <button>답글</button>
-                <button>UP</button>
-                <button>DOWN</button>
+                <button class="reple2">답글</button>
+                <button class="up"><img src="" alt="" />UP</button>
+                <button class="up"><img src="" alt="" />DOWN</button>
             </div>
-        </section2>
+        </section>
     </div>
 </body>
 
