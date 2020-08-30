@@ -17,9 +17,9 @@
     <!-- comment -->
     <main>
         <div class="user">UserName</div>
-        <input type="text" class="userText" />
+        <input type="text" class="userText" placeholder="Id를 입력해주세요" />
         <div class="comment">Comment</div>
-        <textarea name="commentText" id="commentText" cols="30" rows="10"></textarea>
+        <textarea name="commentText" id="commentText" cols="30" rows="10" placeholder="내용을 입력해주세요"></textarea>
         <input type="button" value="Tweet!" class="tweetBtn" />
     </main>
     <!-- comment list -->
@@ -28,42 +28,16 @@
     </div>
     <footer>
         <div class="commentList">
-            <ul>
-                <li>
-                    <div class="line1">
-                        <div class="username">ingikim</div>
-                        <div class="date">2019-01-03 12:30:20</div>
-                    </div>
-                    <div class="text">Welcome to Code States #codestates</div>
-                </li>
-                <li>
-                    <div class="line1">
-                        <div class="username">satya</div>
-                        <div class="date">2019-01-04 18:30:20</div>
-                    </div>
-                    <div class="text">this is test message #pair #programming</div>
-                </li>
-                <li>
-                    <div class="line1">
-                        <div class="username">sundar</div>
-                        <div class="date">2019-01-05 07:30:20</div>
-                    </div>
-                    <div class="text">code now! #work #hard</div>
-                </li>
-                <li>
-                    <div class="line1">
-                        <div class="username">steve</div>
-                        <div class="date">2019-01-03 12:30:20</div>
-                    </div>
-                    <div class="text">Stay hungry,and stay foolish</div>
-                </li>
-                <li>
-                    <div class="line1">
-                        <div class="username">tim</div>
-                        <div class="date">2019-01-04 18:30:20</div>
-                    </div>
-                    <div class="text">education for real world</div>
-                </li>
+            <ul id="list">
+                <template id="render">
+            <li>
+              <div class="line1">
+                <div class="username"></div>
+                <div class="date"></div>
+              </div>
+              <div class="text"></div>
+            </li>
+          </template>
             </ul>
         </div>
     </footer>
@@ -72,3 +46,40 @@
 </body>
 
 </html>
+
+<!-- <li> 
+    <div class="line1">
+        <div class="username">ingikim</div>
+        <div class="date">2019-01-03 12:30:20</div>
+    </div>
+    <div class="text">Welcome to Code States #codestates</div>
+</li>
+<li>
+    <div class="line1">
+        <div class="username">satya</div>
+        <div class="date">2019-01-04 18:30:20</div>
+    </div>
+    <div class="text">this is test message #pair #programming</div>
+</li>
+<li>
+    <div class="line1">
+        <div class="username">sundar</div>
+        <div class="date">2019-01-05 07:30:20</div>
+    </div>
+    <div class="text">code now! #work #hard</div>
+</li>
+<li>
+    <div class="line1">
+        <div class="username">steve</div>
+        <div class="date">2019-01-03 12:30:20</div>
+    </div>
+    <div class="text">Stay hungry,and stay foolish</div>
+</li>
+<li>
+    <div class="line1">
+        <div class="username">tim</div>
+        <div class="date">2019-01-04 18:30:20</div>
+    </div>
+    <div class="text">education for real world</div>
+</li>
+-->
