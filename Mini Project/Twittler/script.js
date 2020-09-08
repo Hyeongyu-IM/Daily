@@ -36,46 +36,8 @@ tweetBtn.onclick = function() {
 
     document
         .querySelector('#list')
-        .insertBefore(document.importNode(content, true), document
-            .querySelector('#list').firstChild);
-
-
+        .appendChild(document.importNode(content, true));
 };
-
-function printcomment() {
-    let content = document.querySelector('template').content;
-    let user = content.querySelector('.username');
-    let date = content.querySelector('.date');
-    let commentText = content.querySelector('.text');
-
-    for (let i = 0; DATA.length > i; i++) {
-        user.textContent = DATA[i].user;
-        commentText.textContent = DATA[i].message;
-        date.textContent = DATA[i].created_at;
-
-        document
-            .querySelector('#list')
-            .appendChild(document.importNode(content, true));
-
-    }
-}
-
-function filter() {
-
-}
-
-function refresh() {
-
-}
-
-
-
-
-
-
-
-
-printcomment();
 
 // 트윗버튼을 누르면 아이디와 내용을 받아와서 ul에 추가해준다
 // check new tweet을 누르면 랜덤으로 내용을 출력한다.
