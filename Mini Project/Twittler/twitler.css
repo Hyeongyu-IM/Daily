@@ -54,6 +54,10 @@ main {
     border-radius: 5px;
 }
 
+.username {
+    cursor: pointer;
+}
+
 #commentText {
     width: 300px;
 }
@@ -75,6 +79,7 @@ main {
     height: 50px;
     width: 405px;
     display: flex;
+    justify-content: space-evenly;
     align-items: center;
     position: relative;
     margin-left: auto;
@@ -86,7 +91,13 @@ main {
     border: none;
     width: 150px;
     height: 30px;
-    margin-left: 15px;
+    border-radius: 5px;
+}
+
+.back {
+    border: none;
+    width: 150px;
+    height: 30px;
     border-radius: 5px;
 }
 

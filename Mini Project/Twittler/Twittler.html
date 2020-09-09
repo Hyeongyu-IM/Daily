@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
     <script src="data.js"></script>
+    <script src="script.js" defer></script>
 </head>
 
 <body>
@@ -25,24 +26,22 @@
     <!-- comment list -->
     <div class="check">
         <input type="button" value="check new tweet" class="checkBtn" />
+        <input type="button" value="Go Back" class="back" />
     </div>
     <footer>
         <div class="commentList">
-            <ul id="list">
-                <template id="render">
-            <li>
-              <div class="line1">
-                <div class="username"></div>
-                <div class="date"></div>
-              </div>
-              <div class="text"></div>
-            </li>
-          </template>
-            </ul>
+            <ul id="list"></ul>
         </div>
     </footer>
-
-    <script src="script.js"></script>
+    <template id="render">
+      <li class="lists">
+        <div class="line1">
+          <div class="username"></div>
+          <div class="date"></div>
+        </div>
+        <div class="text"></div>
+      </li>
+    </template>
 </body>
 
 </html>
